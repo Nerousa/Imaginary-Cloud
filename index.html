@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImaginaryCloudCo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/01a3f6896c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav> <img src="images/loog final.png" class="logo">
+            <ul id="sidemenu">
+             <li><a href="#header">Home</a></li>
+             <li><a href="#about">About</a></li>
+             <li><a href="#contact">Contact</a></li>
+             <i class="fa-solid fa-xmark" onclick="closemenu"()></i>
+            </ul>
+            <i class="fa-solid fa-house" onclick="openmenu"()></i>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer , Web programmer</p>
+            <h1>Hi , Welcome to<span>Imaginary Cloud's</span> website<br></h1>
+
+        </div>
+    </div>
+</div>
+<!-- ---------about--------- -->
+<div id="about">
+    <div class="row">
+        <div class="about-col-1">
+        </div>
+        <div class="about-col-1">
+            <h1 class="sub-title">About Us</h1>
+            <p>The Imaginary Cloud team has started its activities with 11 years of experience in the field of programming, including activities on:C++, C#, Python, CSS, HTML, Java, JavaScript, php, .NET . In addition to this,They have 6 years of experience with WordPress website design (corporate, store, exclusive web designs) and 2 years of digital marketing experience in their resume.</p>
+             <div class="tab-titles">
+                <p class="tab-links active-link" onclick = "opentab('Skills')">Skills</p>
+                <p class="tab-links"  onclick = "opentab('Experience')">Experience</p>
+             </div>
+             <div class="tab-contents active-tab" id="Skills">
+               <ul>
+                <li><span>UI/UX</span><br>Web and App interfaces Designer</li>
+                <li><span>Web Developer</span></li>
+                <li><span>Web programmer</span></li>
+                <li><span>Digital marketing</span></li>
+               </ul>
+             </div>
+             <div class="tab-contents active-link" id = "Experience">
+                <ul>
+                 <li><span>Web Developer</span>since 2012</li>
+                 <li><span>Web programmer</span>since 2012</li>
+                 <li><span>Digital marketing</span>since 2020</li>
+                </ul>
+              </div> 
+        </div>
+    </div>
+
+
+
+</div>
+<!-------------contact-->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Us</h1>
+                <p><i class="fa-regular fa-envelope"></i>ImaginaryCloudCo@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+989912100182</p>
+                <p><i class="fa-solid fa-location-dot"></i>No.7 , Val-Asr St , Azadi st , Tehran , Iran</p>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+  <div class="copyright">
+   <p>Copyright © Imaginary Cloud.</p>
+  </div>
+
+ </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active.tab");
+}
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
