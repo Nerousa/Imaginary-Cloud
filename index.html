@@ -36,10 +36,10 @@
             <h1 class="sub-title">About Us</h1>
             <p>The Imaginary Cloud team has started its activities with 11 years of experience in the field of programming, including activities on:C++, C#, Python, CSS, HTML, Java, JavaScript, php, .NET . In addition to this,They have 6 years of experience with WordPress website design (corporate, store, exclusive web designs) and 2 years of digital marketing experience in their resume.</p>
              <div class="tab-titles">
-                <p class="tab-links active-link" onclick = "opentab('Skills')">Skills</p>
-                <p class="tab-links"  onclick = "opentab('Experience')">Experience</p>
+                <p class="tab-links active-link" onclick = "opentab('skills')">Skills</p>
+                <p class="tab-links"  onclick = "opentab('experience')">Experience</p>
              </div>
-             <div class="tab-contents active-tab" id="Skills">
+             <div class="tab-contents active-tab" id="skills">
                <ul>
                 <li><span>UI/UX</span><br>Web and App interfaces Designer</li>
                 <li><span>Web Developer</span></li>
@@ -47,7 +47,7 @@
                 <li><span>Digital marketing</span></li>
                </ul>
              </div>
-             <div class="tab-contents active-link" id = "Experience">
+             <div class="tab-contents active-link" id = "experience">
                 <ul>
                  <li><span>Web Developer</span>since 2012</li>
                  <li><span>Web programmer</span>since 2012</li>
@@ -98,7 +98,7 @@
             tabcontent.classList.remove("active-tab");
     }
     event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active.tab");
+    document.getElementById(tabname).classList.add("active-tab");
 }
 </script>
 <script>
